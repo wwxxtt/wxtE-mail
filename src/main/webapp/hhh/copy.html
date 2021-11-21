@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>eee</title>
+</head>
+<body>
+<input id="test" type="text" name="" value="this is test.">
+
+<button onclick="Copy()">点击这个按钮就会复制上面input的内容</button>
+<a onclick="Copy" href="">复制</a><br>
+<br>
+<a onclick="Copy()"  id="test1" href="javascript:Copy" value="1547663217">&nbsp&nbsp&nbsp1547663217&nbsp</a><br>
+<br>
+<!--<a>lkajsflkjaslkfdja</a>-->
+<a onclick="Copy()">点击</a>
+<input type="text" id="test2" readonly="readonly" value="1547663217" onclick="Copy()">
+</body>
+<script type="text/javascript">
+  function Copy() {
+    var content = 1547663217;  /*document.getElementById('test1');*/
+    content.select();
+    content.execCommand('Copy');
+    alert('复制成功');
+  }
+</script>
+</html>
